@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Matrimony HTML Template</title>
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script>
+	jQuery(function ($){
+		"use strict";
+		// Months = 0 to 11 (Jan to Dec)
+		var weddDay = new Date(2017, 5, 3);// YYYY, M, DD
+		$('#default-countdown').countdown({until: weddDay, format: 'YOD'});
+	});
+	</script>
+</head>
+<body class="home">
+
+	<!-- Mobile navigation -->
+	<nav class="mobile-nav-menu">
+		<a class="mobile-logo" href="index.html">Kate &amp; Dan</a>
+		<a class="mobile-menu-btn" href="#"><span></span></a>
+		<div class="mobile-menu-container"></div>
+	</nav><!-- End .mobile-nav-menu -->
+
+	<!-- Header -->
+	<header class="default">
+		<nav>
+			<ul>
+				<li><a title="The Couple" href="#top">Home</a></li>
+				<li><a title="Gallery" href="#bridesmaid-gallery">Gallery</a></li>
+                <li><a title="Countdown" href="#countdown">Countdown</a></li>
+                <li><a title="Schedule &amp; RSVP" href="#schedule">Schedule</a></li>
+                <li><a title="Schedule &amp; RSVP" href="#rsvp">RSVP</a></li>
+				<li><a title="Gift List" href="#giftlist">Gift List</a></li>
+				<li><a title="Additional Info" href="#recent-posts">Additional Info</a></li>
+				<li><a title="Location" href="#location">Location</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- Couple section -->
+	<section id="couple" class="row">
+		<div class="columns large-12">
+
+        <!-- Bridesmaids gallery section -->
+	<section id="bridesmaid-gallery">
+		<h2>GALLERY</h2>
+		<nav class="dg-nav">
+			<span class="dg-prev">&lt;</span>
+			<span class="dg-next">&gt;</span>
+		</nav>
+		<div id="bridesmaid-carousel" class="dg-container">
+			<div class="dg-wrapper">
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/cleoandanish.png) no-repeat 50% center; background-size:cover;">
+					<img src="img/cleoandanish.png" alt="Cleo & Anish">
+				</a>
+				<!-- end bridesmaid image -->
+
+                <!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/294x294_2.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/294x294_2.jpg" alt="Kate & Dan">
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/294x294_3.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/294x294_3.jpg" alt="Kate & Dan">
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(img/294x294_4.jpg) no-repeat 50% center; background-size:cover;">
+					<img src="img/294x294_4.jpg" alt="Kate & Dan">
+				</a>
+				<!-- end bridesmaid image -->
+
+			</div><!-- End .dg-wrapper -->
+		</div><!-- End #bridesmaid-carousel -->
+        <div align="center"><p style="font-size:22px;">Hello!</p>
+        <p style="font-size:16px;">We'd like to take a moment to say how happy we are that you can join us in celebrating our big day and we can't wait to see you on the 3rd June!
+</p></div>
+		<div class="bridemaids-mobile-slider-wrap"><div class="bridemaids-mobile-slider"></div></div>
+	</section><!-- End #bridesmaid-gallery -->
+
+		</div><!-- End .large-12 -->
+	</section><!-- End #couple -->
+
+	<!-- Countdown section -->
+	<section id="countdown">
+		<h2>Countdown until Wedding</h2>
+		<div id="default-countdown"></div>
+	</section><!-- End #countdown -->
+
+
+	<!-- Schedule section -->
+	<section id="schedule">
+	    <div class="schedule-content-wrap">
+	        <h2>Schedule</h2>
+	        <div class="row large-6">
+	                <strong>Saturday</strong>
+	                <img src="img/party2.jpg" alt="">
+	                <div class="event-details">
+	                    <p>4pm - Guests arrive at the Eden Project</p>
+	                    <a href="#location">VIEW DIRECTIONS</a></p>
+	                    <p>5pm - Ceremony begins</p>
+	        <p>6pm - Ceremony ends, party begins!</p>
+	        </p>
+	        <strong>Sunday</strong>
+	        <p>Guests enjoy their free pass to the Eden Project</p>
+	        <a href=www.edenproject.com/>CHECK OUT EDEN</a></p>
+	        <p>Make sure you try some of the baobab ice cream and have a go on England's longest zipwire!</p>
+	                </div><!-- End .event-details -->
+	            </div><!-- End .columns.large-6 -->
+
+	        <!-- End .row -->
+	    </div><!-- End .schedule-content-wrap -->
+	</section><!-- End #schedule -->
+
+
+    <!-- RSVP section -->
+	<section id="rsvp">
+		<div class="rsvp-form-wrap">
+			<h2>RSVP</h2>
+			<p class="rsvp-desc">RSVP by 1 May 2017. Come and join our wedding party! If you have any questions prior to the day or any special dietary requirements (other than vegetarian) please email us at <a href="mailto:cleoandanish@gmail.com">cleoandanish@gmail.com</a> or call us on either:<br>Cleo: 075949 98897<br>
+    Anish: 078413 75316</p>
+			<form id="rsvp-form" action="sendemail.php" method="post" data-abide>
+				<div class="columns large-12">
+					<label for="attendee-name">Name </label>
+					<input id="attendee-name" name="attendee_name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
+					<small class="error">Please enter your name.</small>
+				</div><!-- End .large-12 -->
+                <div class="columns large-12">
+					<label for="attendee-name">Additional Guest (optional)</label>
+					<input id="guest-name" name="guest_name" type="text" placeholder="Guest Name" required pattern="[a-zA-Z]+">
+				</div><!-- End .large-12 -->
+				<div class="columns large-12">
+					<label for="attendee-email">Email Address </label>
+					<input id="attendee-email" name="attendee_email" type="email" placeholder="johndoe@email.com" required>
+					<small class="error">Please enter a valid email.</small>
+				</div><!-- End .large-12 -->
+				<div class="columns large-4 medium-4 small-4">
+					<label for="guests">Guests</label>
+					<select id="guests" name="guests">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+					</select>
+				</div><!-- End .large-4 -->
+				<div class="columns large-8 medium-8 small-8">
+					<label for="attending">We will be attending</label>
+					<select id="attending" name="attending">
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+					</select>
+				</div><!-- End .large-8 -->
+				<div class="columns large-12">
+					<label for="dietaryreq">Dietary Requirements</label>
+					<input id="dietaryreq" name="dietaryreq" type="text" placeholder="eg. Vegan, allergies" required pattern="[a-zA-Z]+">
+				</div><!-- End .large-12 -->
+                <div class="columns large-12">
+					<input id="rsvp-submit" class="button" type="submit" value="Submit" name="rsvp_submit">
+				</div><!-- End .large-12 -->
+			</form>
+		</div><!-- End .rsvp-form-wrap -->
+	</section><!-- End #rsvp -->
+
+
+    <!-- giftlist section -->
+    <section id="giftlist">
+
+           <div class="rsvp-form-wrap">
+			<h2>GIFT LIST</h2>
+			<p class="rsvp-desc">Should you wish to buy a gift for Anish and Cleo, they have a gift list at X below. Thank you.</p>
+            <div align="center"><img src="img/john-lewis-logo.jpg" alt="Giftlist"></div>
+            <a href="http://www.johnlewis.com" target="_blank"><input id="rsvp-submit" class="button" type="submit" value="Go to shop" name="rsvp_submit"></a>
+
+		</div>
+			<div class="row">
+
+
+			</div><!-- End .row -->
+		</div><!-- End .schedule-content-wrap -->
+    </section>
+	<!-- End #giftlist -->
+
+	<!-- Recent posts section -->
+	<section id="recent-posts">
+		<h2>Additional Info</h2>
+		<div class="blog-posts-wrap">
+
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="img/acommodation.png" alt="Accomodation">
+           		<div class="post-text">
+					<h3>Accomodation</h3>
+					<p>We recommend booking your accommodation as soon as you can. Check out a variety of local accommodation options below.</p>
+					<a href="accomodation.html" class="read-more">Read more</a>
+				</div>
+			</div>
+			<!-- end blog post -->
+
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="img/carriages.png" alt="Carriages">
+				<div class="post-text">
+					<h3>Getting There</h3>
+					<p>Whether you're coming from Glasgow, Birmingham, Ham or London, here are some tips on the best routes to the Eden project...<br><br></p>
+					<a href="carriages.html" class="read-more">Read more</a>
+				</div>
+			</div>
+			<!-- end blog post -->
+
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="img/dress-code.png" alt="Dress Code">
+				<div class="post-text">
+					<h3>Dress Code</h3>
+					<p>We encourage everyone, young and old, to join in on our Indian dress code. If anyone needs any wardrobe tips don't hesitate to ask Cleo who can help get you Bollywood ready!<br><br><br></p><div class="noread-more"><br></div>
+				</div>
+			</div>
+			<!-- end blog post -->
+
+		</div><!-- End .blog-posts-wrap -->
+	</section><!-- End #recent-posts -->
+
+
+
+
+
+	<!-- Location section -->
+	<section id="location">
+		<h2>LOCATION</h2>&nbsp;
+        <div align="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2545.3405524418217!2d-4.746980201197131!3d50.360204044384574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5660ab505756c241!2sEden+Project!5e0!3m2!1sen!2suk!4v1470405936419" width="663" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+		<div class="columns large-12"></div>
+
+	</section><!-- End #location -->
+
+	<footer>
+		<p>
+			&copy; 2015 Matrimony - Premium HTML Template by <a title="Infinity Labs" href="http://infinitylabs.ca" target="_blank">Infinity Labs</a>
+			<span class="social-icons">
+				<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				<a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				<a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+			  </span>
+		</p>
+	</footer>
+
+	<script src="js/foundation.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#bridesmaid-carousel').gallery();
+			$('#groomsmen-carousel').ggallery();
+			$('#couple-gallery').ilScatteredGallery();
+		});
+	</script>
+
+	<script>
+		jQuery(document).foundation();
+	</script>
+</body>
+</html>
